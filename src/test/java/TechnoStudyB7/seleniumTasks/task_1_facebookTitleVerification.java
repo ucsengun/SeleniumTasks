@@ -1,12 +1,15 @@
-package seleniumTasks;
+package TechnoStudyB7.seleniumTasks;
 
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class task_1_facebookTitleVerification {
     public static void main(String[] args) {
 
         //Set up driver
-        WebDriverManager
+        WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
 
         //Open browser and get webpage
