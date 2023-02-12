@@ -12,12 +12,13 @@ public class task_8 {
         WebDriver ghj= new ChromeDriver();
 
         //Open the browser
-        ghj.get("https://zero.webappsecurity.com/login.html");
+        ghj.get("http://zero.webappsecurity.com/login.html");
 
         //Get the webpage
+        ghj.get("http://zero.webappsecurity.com/login.html");
 
         //Locate header and get the text
-        String headerText = ghj.findElement(By.tagName("h3").getText());
+        String headerText = ghj.findElement(By.tagName("h3"));
 
         //Create expectedTitle String
         String expectedTitle = "Log in to ZeroBank";
